@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #3e3e3e;
+    font-size: 15px;
+    background-color: #FBFBFB
+}
+.info {
+    background-color: #ccc;
+    padding: 10px;
+}
+.head {
+    width: 100%;
+    min-height: 75px;
+}
+.tools {
+    list-style: none;
+    padding: 10px;
+}
+.tools li {
+    padding: 8px;
+    cursor: move;
+    border-radius: 8px;
+    border: 1px solid #D8D8D7;
+    margin: 20px;
+    background-color: #F7EBED;
+}
+.tools li:hover {
+    background-color: #fffddd;
+}
+.left {
+    width: 18%;
+    float: left;
+    border: 1px solid #ccc;
+    min-height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 14px 9px 0 0;
+}
+.right {
+    width: 80%;
+    float: left;
+    border: 1px solid #ccc;
+    min-height: 500px;
+}
+#main-droppable {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #bbc443;
+    background-color: #FFFFFF;
+}
+#table-add-form,
+#td-edit-form,
+#output_div {
+    display: none;
+}
+.delete {
+    border: 1px solid #AEEF0F;
+}
+.del_btn {
+    position: relative;
+}
+.del_link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: url('images/delete.png') no-repeat right top;
+}
+#output-text {
+    margin: 0px;
+    width: 700px;
+    height: 250px;
+    font-size: 12px;
+}
+.highlight {
+    border: 1px solid #AEEF0F;
+}
+#get-HTML {
+    float: right;
+    margin: 0px 14px 7px 0px;
+    width: 150px;
+    height: 34px;
+}
+#edit {
+    width: 150px;
+    height: 34px;
+}
