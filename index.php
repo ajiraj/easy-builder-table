@@ -50,19 +50,19 @@
         <tr>
             <td>Rows:</td>
             <td>
-                <input type="text" name="row" id="row">
+                <input type="text" name="row" id="row" value="3">
             </td>
         </tr>
         <tr>
             <td>Cols:</td>
             <td>
-                <input type="text" name="col" id="col">
+                <input type="text" name="col" id="col" value="3">
             </td>
         </tr>
         <tr>
             <td>Width:</td>
             <td>
-                <input type="text" name="tbl-width" id="tbl-width">
+                <input type="text" name="tbl-width" id="tbl-width" value="300">
             </td>
         </tr>
         <tr>
@@ -74,6 +74,17 @@
     </table>
 </div>
 
+<div id="td-edit-form-main" style="width:250px!important;padding: 12px 0 0 36px;">
+    <table>
+        <tr>
+            <td>
+                <input type="button" name="Delete" id="td-delete" value="Delete" style="width:75px;padding: 3px;margin: 15px;">
+            </td>
+            <td>
+                <input type="button" name="Edit" id="td-edit" value="Edit" style="width:75px;padding: 3px;margin: 15px;">
+            </td>
+        </tr>
+ </table>
 
 <div id="td-edit-form">
     <table>

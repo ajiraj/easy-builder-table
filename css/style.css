@@ -50,6 +50,7 @@ body {
 }
 #table-add-form,
 #td-edit-form,
+#td-edit-form-main,
 #output_div {
     display: none;
 }

@@ -4,6 +4,7 @@
 
   $(function() {
       var clone;
+      // makes tools draggable
       $(".draggable").draggable({
           helper: 'clone',
           cursor: 'hand',
@@ -12,7 +13,7 @@
       });
 
       make_dropables();
-
+      // add button click function definition
       $('#table-add').click(function() {
           var row = $("#row").val();
           var col = $("#col").val();
@@ -39,6 +40,25 @@
 
           $('#td-edit-form').dialog('close');
       });
+      $('#td-edit').click(function(){
+          $("#td-edit-form-main").dialog('close');
+          $("#td-edit-form").dialog();
+      });
+
+      $('#td-delete').click(function(){
+          var txt;
+          var r = confirm("Press a button!");
+          if (r == true) {
+              var id = $("#selected-td-id").val();
+              $("#" + id).remove();
+          } else {
+
+          }
+
+
+      });
+
+
       $('#edit').click(function() {
 
           if ($(this).val() == 'Edit') {
@@ -73,12 +93,12 @@
   }
 
   function make_td_clickable() {
-      $('td').click(function() {
+      $('#main-droppable').find('td').click(function() {
           $('td').removeClass('highlight');
           $(this).addClass('highlight');
-          var idz = $(this).attr('id');
-          $("#selected-td-id").val(idz);
-          $("#td-edit-form").dialog();
+          var id = $(this).attr('id');
+          $("#selected-td-id").val(id);
+          $("#td-edit-form-main").dialog();
       });
   }
 
