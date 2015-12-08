@@ -83,6 +83,18 @@
 
 
       });
+      $('#add-text-btn').click(function() {
+
+          var input_text = $("#input-text").val();
+
+          var dest_td=$("#destintion-field").val();
+          console.log(input_text,dest_td);
+          $("#"+dest_td).append(input_text);
+         // make_resizable('img');
+          $("#text-editor-form").dialog('close');
+      });
+
+
   });
 
   function make_dropables() {
@@ -148,6 +160,9 @@
 			case 'table':
 						  make_table_in(droppable);
 						  break;
+          case 'text':
+                          add_text_in(droppable);
+                          break;
       }
   }
 
@@ -159,13 +174,20 @@
       $("#table-add-form").dialog();
   }
 
+function add_text_in(droppable) {
+    console.log("droppable:",droppable);
+    $("#destintion-field").val(droppable);
+    $("#input-text").val("");
+    $("#text-editor-form").dialog({width:850,height:365});
+    $("#input-text").cleditor();
+}
   
 /*** Table drawing function  **/
   
   function draw_table(id, row, col, width) {
       var tablearea = document.getElementById(id),
           table = document.createElement('table');
-      table.border = 1;
+      table.border = 0;
       table.cellpadding = 0;
       table.cellspacing = 0;
       table.width = width;

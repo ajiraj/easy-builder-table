@@ -3,9 +3,12 @@
 <head>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.cleditor.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/jquery.cleditor.min.js"></script>
+
 </head>
 
 <body>
@@ -26,9 +29,10 @@
         </div>
         <ul class="tools">
             <li id="table" class="draggable">Table</li>
-            <li id="para" class="draggable">Paragraph</li>
             <li id="text" class="draggable">Text</li>
             <li id="image" class="draggable">Image</li>
+            <li id="para" class="draggable">Paragraph</li>
+
         </ul>
         <br></br>
         <center>
@@ -116,6 +120,11 @@
 </div>
 <div id="output_div">
     <textarea id="output-text"></textarea>
+</div>
+
+<div id="text-editor-form">
+    <textarea id="input-text" name="input-text"></textarea>
+    <input type="button" name="add-text" id="add-text-btn" value="Insert">
 </div>
 
 <input type="hidden" name="destintion-field" id="destintion-field" value="">

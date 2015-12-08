@@ -48,9 +48,13 @@ body {
     border: 1px solid #bbc443;
     background-color: #FFFFFF;
 }
+#main-droppable table td:hover{cursor: cell;}
+#main-droppable table,#main-droppable table td{border:1px dotted #000000;}
+#main-droppable>table{margin:20px;}
 #table-add-form,
 #td-edit-form,
 #td-edit-form-main,
+#text-editor-form,
 #output_div {
     display: none;
 }
@@ -87,3 +91,4 @@ body {
     width: 150px;
     height: 34px;
 }
+#add-text-btn{float:right;margin:10px;}
