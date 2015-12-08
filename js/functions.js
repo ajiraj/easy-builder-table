@@ -77,10 +77,8 @@
           $(bak).find('td').removeAttr("class").removeAttr("id");
           $(bak).find('div').removeAttr("class").removeAttr("style");
           $("#output-text").html($(bak).html());
-          $("#output_div").dialog({
-              width: 750
-          });
-
+          $("#output_div").dialog({  width: 750  });
+          save_file($(bak).html());
 
       });
       $('#add-text-btn').click(function() {
@@ -210,3 +208,15 @@ function add_text_in(droppable) {
       make_resizable("#" + tbl_id + " td");
 
   }
+
+function save_file(data)
+{
+    $.ajax({
+        method:'post',
+        url:'api.php?fn=save',
+        data:{data:data},
+        success:function(data){
+              console.log(data);
+        }
+    });
+}

@@ -23,6 +23,8 @@
         </p>
         <input style="float:right;" type="button" name="add" id="get-html" value="Get HTML">
     </div>
+
+<!--------   Drag menu -------->
     <div class="left">
         <div class="info">
             <center>MENU - Drag n Drop</center>
@@ -42,14 +44,14 @@
 
     </div>
 
+    <!--------   Droppable area -------->
     <div class="right">
         <div id="main-droppable" class="droppable"></div>
 
     </div>
-</body>
 
-</html>
-<div id="table-add-form">
+    <!--------   Table add form dialogue -------->
+    <div id="table-add-form">
     <table>
         <tr>
             <td>Rows:</td>
@@ -78,7 +80,8 @@
     </table>
 </div>
 
-<div id="td-edit-form-main" style="width:250px!important;padding: 12px 0 0 36px;">
+<!--------   Td Editor Main dialogue -------->
+    <div id="td-edit-form-main" style="width:250px!important;padding: 12px 0 0 36px;">
     <table>
         <tr>
             <td>
@@ -90,6 +93,7 @@
         </tr>
  </table>
 
+<!--------   Td Editor dialogue -------->
 <div id="td-edit-form">
     <table>
         <tr>
@@ -118,14 +122,21 @@
         </tr>
     </table>
 </div>
+
+    <!--------   Output html dialogue -------->
 <div id="output_div">
     <textarea id="output-text"></textarea>
 </div>
 
+<!--------   Text Editor dialogue -------->
 <div id="text-editor-form">
     <textarea id="input-text" name="input-text"></textarea>
     <input type="button" name="add-text" id="add-text-btn" value="Insert">
 </div>
 
+<!--     Hidden fields ( Data holders) -------->
 <input type="hidden" name="destintion-field" id="destintion-field" value="">
 <input type="hidden" name="selected-td-id" id="selected-td-id" value="">
+</body>
+
+</html>
